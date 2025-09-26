@@ -24,6 +24,7 @@ public class hitungRataRata {
 
         System.out.println("rata rata: " + total/n);
 
+        in.close();
     }
     
 }

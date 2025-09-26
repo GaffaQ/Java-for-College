@@ -1,3 +1,5 @@
+package others;
+
 import java.util.Random;
 import java.util.Scanner;
 import java.text.SimpleDateFormat;
@@ -47,6 +49,7 @@ public class Mart255150401111015 {
         int total2 = jml2 * harga2;
         int total3 = jml3 * harga3;
         int total4 = jml4 * harga4;
+        sc.close();
 
         int subtotal = total1 + total2 + total3 + total4;
 

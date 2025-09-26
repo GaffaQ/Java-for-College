@@ -24,6 +24,7 @@ public class perkalianMatriks {
 
         if (kolomA != barisB) {
             System.out.println("Matriks tidak dapat dikalikan");
+            in.close();
             return;
         }
 
@@ -54,6 +55,7 @@ public class perkalianMatriks {
             }
             System.out.println();
         }
+        in.close();
     }
 
 

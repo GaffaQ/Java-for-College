@@ -10,6 +10,7 @@ public class pemdas2 {
         long n = sc.nextLong();
         boolean flag = false;
         long i = 1;
+        sc.close();
 
         while (i <= n) {
             if (n == 1) {
@@ -27,6 +28,7 @@ public class pemdas2 {
         } else {
             System.out.println("tidak");
         }
+        sc.close();
 
 
     }

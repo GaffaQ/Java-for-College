@@ -27,6 +27,7 @@ public class cariMaxMin {
 
         System.out.println("Max = " + max + ", Min = " + min);
 
+        in.close();
     }
 
 }

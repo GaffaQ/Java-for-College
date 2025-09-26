@@ -9,6 +9,7 @@ public class pemdas1 {
         int n;
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
+        sc.close();
 
         for (int i = 1; i <= n; i++) {
             for (int j = n; j > i; j--) {
