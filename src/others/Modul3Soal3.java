@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Modul3Soal3 {
     
+    /*
+     * Gaffa Fadhlanul Rozaq
+     * 255150401111015
+     */
     public static void main(String[] args) {
         
         Scanner in = new Scanner(System.in);
@@ -29,46 +33,46 @@ public class Modul3Soal3 {
                     break;
                 case 1:
                     System.out.print("MASUKKAN PANJANG: ");
-                    double p = in.nextDouble();
+                    int p = in.nextInt();
                     System.out.print("MASUKKAN LEBAR: ");
-                    double l = in.nextDouble();
+                    int l = in.nextInt();
                     System.out.print("MASUKKAN TINGGI: ");
-                    double t = in.nextDouble();
-                    double volumeBalok = p * l * t;
+                    int t = in.nextInt();
+                    int volumeBalok = p * l * t;
                     System.out.println("VOLUME BALOK: " + volumeBalok);
                     System.out.println();
                     break;
                 case 2:
                     System.out.print("MASUKKAN JARI-JARI: ");
-                    double r = in.nextDouble();
-                    double volumeBola = (4.0/3.0) * Math.PI * r * r * r;
+                    int r = in.nextInt();
+                    int volumeBola = (int) ((4/3) * Math.PI * r * r * r);
                     System.out.println("VOLUME BOLA: " + volumeBola);
                     System.out.println();
                     break;
                 case 3:
                     System.out.print("MASUKKAN JARI-JARI: ");
-                    double r2 = in.nextDouble();
+                    int r2 = in.nextInt();
                     System.out.print("MASUKKAN TINGGI: ");
-                    double t2 = in.nextDouble();
-                    double volumeKerucut = (1.0/3.0) * Math.PI * r2 * r2 * t2;
+                    int t2 = in.nextInt();
+                    int volumeKerucut = (int) ((1.0/3.0) * Math.PI * r2 * r2 * t2);
                     System.out.println("VOLUME KERUCUT: " + volumeKerucut);
                     System.out.println();
                     break;
                 case 4:
                     System.out.print("MASUKKAN JARI-JARI: ");
-                    double r3 = in.nextDouble();
+                    int r3 = in.nextInt();
                     System.out.print("MASUKKAN TINGGI: ");
-                    double t3 = in.nextDouble();
-                    double volumeSilinder = Math.PI * r3 * r3 * t3;
+                    int t3 = in.nextInt();
+                    int volumeSilinder = (int) (Math.PI * r3 * r3 * t3);
                     System.out.println("VOLUME SILINDER: " + volumeSilinder);
                     System.out.println();
                     break;
                 case 5:
                     System.out.print("MASUKKAN ALAS: ");
-                    double a = in.nextDouble();
+                    int a = in.nextInt();
                     System.out.print("MASUKKAN TINGGI: ");
-                    double t4 = in.nextDouble();
-                    double volumeLimasSegitiga = (1.0/3.0) * (0.5 * a * a) * t4;
+                    int t4 = in.nextInt();
+                    int volumeLimasSegitiga = (int) ((1.0/3.0) * (0.5 * a * a) * t4);
                     System.out.println("VOLUME LIMAS SEGITIGA: " + volumeLimasSegitiga);
                     System.out.println();
                     break;

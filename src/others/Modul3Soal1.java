@@ -5,12 +5,8 @@ import java.util.Scanner;
 public class Modul3Soal1 {
     
     /*
-     * 
-     *          A
-     *         A A
-     *        A   A
-     *       A A A A
-     *      A       A
+     * Gaffa Fadhlanul Rozaq
+     * 255150401111015
      */
     public static void main(String[] args) {
         
