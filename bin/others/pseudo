@@ -1,0 +1,66 @@
+PROGRAM CetakHurufASCIIArt
+
+INPUT name
+
+UBAH semua huruf dalam name menjadi huruf kapital
+
+FOR setiap karakter c dalam name DO
+    IF c = 'A' THEN
+        CETAK pola huruf A
+    ELSE IF c = 'B' THEN
+        CETAK pola huruf B
+    ELSE IF c = 'C' THEN
+        CETAK pola huruf C
+    ELSE IF c = 'D' THEN
+        CETAK pola huruf D
+    ELSE IF c = 'E' THEN
+        CETAK pola huruf E
+    ELSE IF c = 'F' THEN
+        CETAK pola huruf F
+    ELSE IF c = 'G' THEN
+        CETAK pola huruf G
+    ELSE IF c = 'H' THEN
+        CETAK pola huruf H
+    ELSE IF c = 'I' THEN
+        CETAK pola huruf I
+    ELSE IF c = 'J' THEN
+        CETAK pola huruf J
+    ELSE IF c = 'K' THEN
+        CETAK pola huruf K
+    ELSE IF c = 'L' THEN
+        CETAK pola huruf L
+    ELSE IF c = 'M' THEN
+        CETAK pola huruf M
+    ELSE IF c = 'N' THEN
+        CETAK pola huruf N
+    ELSE IF c = 'O' THEN
+        CETAK pola huruf O
+    ELSE IF c = 'P' THEN
+        CETAK pola huruf P
+    ELSE IF c = 'Q' THEN
+        CETAK pola huruf Q
+    ELSE IF c = 'R' THEN
+        CETAK pola huruf R
+    ELSE IF c = 'S' THEN
+        CETAK pola huruf S
+    ELSE IF c = 'T' THEN
+        CETAK pola huruf T
+    ELSE IF c = 'U' THEN
+        CETAK pola huruf U
+    ELSE IF c = 'V' THEN
+        CETAK pola huruf V
+    ELSE IF c = 'W' THEN
+        CETAK pola huruf W
+    ELSE IF c = 'X' THEN
+        CETAK pola huruf X
+    ELSE IF c = 'Y' THEN
+        CETAK pola huruf Y
+    ELSE IF c = 'Z' THEN
+        CETAK pola huruf Z
+    ELSE
+        CETAK baris kosong (untuk spasi atau karakter lain)
+    ENDIF
+    CETAK baris kosong tambahan (sebagai pemisah antar huruf)
+ENDFOR
+
+SELESAI

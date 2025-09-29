@@ -8,6 +8,7 @@ public class Modul3Soal1 {
      * Gaffa Fadhlanul Rozaq
      * 255150401111015
      */
+    
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -17,7 +18,7 @@ public class Modul3Soal1 {
 
         for (int i = 0; i < n; i++) {
             for (int k = n-1; k > i; k--) {
-                System.out.print("$");
+                System.out.print(" ");
                 System.out.print(" ");
             }
             
