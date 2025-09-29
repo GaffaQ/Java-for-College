@@ -19,6 +19,8 @@ public class transposeMatriks {
             }
         }
 
+        in.close();
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 matriksB[j][i] = matriksA[i][j];

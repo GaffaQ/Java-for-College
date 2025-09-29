@@ -1,7 +1,5 @@
 package others;
 
-import java.util.Scanner;
-
 public class Modul3Soal2 {
 
     /*

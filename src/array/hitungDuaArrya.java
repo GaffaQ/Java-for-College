@@ -8,6 +8,7 @@ public class hitungDuaArrya {
         Scanner in = new Scanner(System.in);
         int n;
         n = in.nextInt();
+        in.close();
         int[] arr1 = new int[n];
         int[] arr2 = new int[n];
         int[] arrHasil = new int[n];
@@ -26,6 +27,7 @@ public class hitungDuaArrya {
         for (int i = 0; i < n; i++) {
             System.out.print(arrHasil[i] + " ");
         }
+        
         
     }
 }
