@@ -1,66 +1,69 @@
-PROGRAM CetakHurufASCIIArt
+PROGRAM HitungVolume
 
-INPUT name
+DEKLARASI
+    flag ← true
+    n, p, l, t, r, r2, t2, r3, t3, a, t4 : integer
+    volumeBalok, volumeBola, volumeKerucut, volumeSilinder, volumeLimasSegitiga : integer
 
-UBAH semua huruf dalam name menjadi huruf kapital
+ALGORITMA
+    WHILE flag = true DO
+        TULIS "MENU"
+        TULIS "0. KELUAR"
+        TULIS "1. HITUNG VOLUME BALOK"
+        TULIS "2. HITUNG VOLUME BOLA"
+        TULIS "3. HITUNG VOLUME KERUCUT"
+        TULIS "4. HITUNG VOLUME SILINDER"
+        TULIS "5. HITUNG VOLUME LIMAS SEGITIGA"
+        TULIS "MASUKKAN PILIHAN ANDA: "
+        INPUT n
 
-FOR setiap karakter c dalam name DO
-    IF c = 'A' THEN
-        CETAK pola huruf A
-    ELSE IF c = 'B' THEN
-        CETAK pola huruf B
-    ELSE IF c = 'C' THEN
-        CETAK pola huruf C
-    ELSE IF c = 'D' THEN
-        CETAK pola huruf D
-    ELSE IF c = 'E' THEN
-        CETAK pola huruf E
-    ELSE IF c = 'F' THEN
-        CETAK pola huruf F
-    ELSE IF c = 'G' THEN
-        CETAK pola huruf G
-    ELSE IF c = 'H' THEN
-        CETAK pola huruf H
-    ELSE IF c = 'I' THEN
-        CETAK pola huruf I
-    ELSE IF c = 'J' THEN
-        CETAK pola huruf J
-    ELSE IF c = 'K' THEN
-        CETAK pola huruf K
-    ELSE IF c = 'L' THEN
-        CETAK pola huruf L
-    ELSE IF c = 'M' THEN
-        CETAK pola huruf M
-    ELSE IF c = 'N' THEN
-        CETAK pola huruf N
-    ELSE IF c = 'O' THEN
-        CETAK pola huruf O
-    ELSE IF c = 'P' THEN
-        CETAK pola huruf P
-    ELSE IF c = 'Q' THEN
-        CETAK pola huruf Q
-    ELSE IF c = 'R' THEN
-        CETAK pola huruf R
-    ELSE IF c = 'S' THEN
-        CETAK pola huruf S
-    ELSE IF c = 'T' THEN
-        CETAK pola huruf T
-    ELSE IF c = 'U' THEN
-        CETAK pola huruf U
-    ELSE IF c = 'V' THEN
-        CETAK pola huruf V
-    ELSE IF c = 'W' THEN
-        CETAK pola huruf W
-    ELSE IF c = 'X' THEN
-        CETAK pola huruf X
-    ELSE IF c = 'Y' THEN
-        CETAK pola huruf Y
-    ELSE IF c = 'Z' THEN
-        CETAK pola huruf Z
-    ELSE
-        CETAK baris kosong (untuk spasi atau karakter lain)
-    ENDIF
-    CETAK baris kosong tambahan (sebagai pemisah antar huruf)
-ENDFOR
+        SWITCH (n)
+            CASE 0:
+                flag ← false
+
+            CASE 1:
+                TULIS "MASUKKAN PANJANG: "
+                INPUT p
+                TULIS "MASUKKAN LEBAR: "
+                INPUT l
+                TULIS "MASUKKAN TINGGI: "
+                INPUT t
+                volumeBalok ← p * l * t
+                TULIS "VOLUME BALOK = ", volumeBalok
+
+            CASE 2:
+                TULIS "MASUKKAN JARI-JARI: "
+                INPUT r
+                volumeBola ← (4/3) * π * r^3
+                TULIS "VOLUME BOLA = ", volumeBola
+
+            CASE 3:
+                TULIS "MASUKKAN JARI-JARI: "
+                INPUT r2
+                TULIS "MASUKKAN TINGGI: "
+                INPUT t2
+                volumeKerucut ← (1/3) * π * r2^2 * t2
+                TULIS "VOLUME KERUCUT = ", volumeKerucut
+
+            CASE 4:
+                TULIS "MASUKKAN JARI-JARI: "
+                INPUT r3
+                TULIS "MASUKKAN TINGGI: "
+                INPUT t3
+                volumeSilinder ← π * r3^2 * t3
+                TULIS "VOLUME SILINDER = ", volumeSilinder
+
+            CASE 5:
+                TULIS "MASUKKAN ALAS: "
+                INPUT a
+                TULIS "MASUKKAN TINGGI: "
+                INPUT t4
+                volumeLimasSegitiga ← (1/3) * (0.5 * a * a) * t4
+                TULIS "VOLUME LIMAS SEGITIGA = ", volumeLimasSegitiga
+
+            DEFAULT:
+                TULIS "PILIHAN TIDAK VALID"
+        END SWITCH
+    END WHILE
 
 SELESAI

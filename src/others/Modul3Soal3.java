@@ -25,7 +25,6 @@ public class Modul3Soal3 {
             System.out.println();
             System.out.print("MASUKKAN PILIHAN ANDA: ");
             int n = in.nextInt();
-            in.close();
 
             switch (n) {
                 case 0:
@@ -82,6 +81,7 @@ public class Modul3Soal3 {
                     break;
             }
         }
+        in.close();
 
     }
 
