@@ -1,9 +1,11 @@
+package others;
+
 import java.util.Random;
 import java.util.Scanner;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Mart255150401111015 {
+public class a {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
@@ -17,15 +19,18 @@ public class Mart255150401111015 {
         int subtotal = 0;
 
         for (int i = 0; i < n; i++) {
-            System.out.print("Nama barang " + (i+1) + ": ");
+            System.out.print("Nama barang " + i+1 + ": ");
             namaBarang[i] = sc.next();
-            System.out.print("Jumlah barang " + (i+1) + ": ");
+            System.out.print("Jumlah barang " + i+1 + ": ");
             jumlahBarang[i] = sc.nextInt();
-            System.out.print("Harga barang " + (i+1) + ": ");
+            System.out.print("Harga barang " + i+1 + ": ");
             hargaBarang[i] = sc.nextInt();
             totalBarang[i] += jumlahBarang[i] * hargaBarang[i];
             subtotal += totalBarang[i];
         }
+
+        System.out.print("Nama Kasir: ");
+        String kasir = sc.nextLine();
 
 
         double diskonRate = 0.0;
@@ -39,11 +44,8 @@ public class Mart255150401111015 {
         int diskon = (int) (subtotal * diskonRate);
         int total = subtotal - diskon;
 
-        System.out.print("Nama Kasir: ");
-        String kasir = sc.next();
         System.out.print("Jumlah Bayar: ");
         int bayar = sc.nextInt();
-
         int kembali = bayar - total;
 
         int receiptNumber = 100000 + rand.nextInt(900000);
