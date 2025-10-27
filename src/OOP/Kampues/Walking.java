@@ -46,4 +46,24 @@ public class Walking {
         }
     }
 
+    public void moveDiagoTopRight(int x,int y){
+        moveTop(x);
+        moveRight(y);
+    }
+
+    public void moveDiagoTopLeft(int x, int y){
+        moveTop(x);
+        moveLeft(y);
+    }
+
+    public void moveDiagoDownRight(int x, int y){
+        moveDown(x);
+        moveRight(y);
+    }
+
+    public void moveDiagoDownLeft(int x, int y){
+        moveDown(x);
+        moveLeft(y);
+    }
+
 }

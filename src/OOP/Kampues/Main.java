@@ -39,6 +39,18 @@ public class Main {
                 case 4:
                     walker.moveDown(1);
                     break;
+                case 5:
+                    walker.moveDiagoTopRight(1, 1);
+                    break;
+                case 6:
+                    walker.moveDiagoTopLeft(1, 1);
+                    break;
+                case 7:
+                    walker.moveDiagoDownRight(1, 1);
+                    break;
+                case 8:
+                    walker.moveDiagoDownLeft(1, 1);
+                    break;
                 default:
                    flag = false; 
                     break;
