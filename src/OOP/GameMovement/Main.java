@@ -1,4 +1,4 @@
-package OOP.Kampues;
+package OOP.GameMovement;
 
 import java.util.Scanner;
 
@@ -13,12 +13,6 @@ public class Main {
         m = in.nextInt();
 
         String[][] arena = new String[n][m];
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                arena[i][j] = "_";
-            }
-        }
 
         Player sultan = new Player("Sultan", 0, 0);
         Walking walker = new Walking(sultan, n,m);
