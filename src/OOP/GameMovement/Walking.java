@@ -1,4 +1,4 @@
-package OOP.Kampues;
+package OOP.GameMovement;
 
 public class Walking {
     
